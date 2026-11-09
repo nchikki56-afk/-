@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій мультимедійний світ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #26334d;
+      background: #eef5ff;
+      text-align: center;
+    }
+    header {
+      background: #253b80;
+      color: white;
+      padding: 24px 16px;
+    }
+    header h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4vw, 2.3rem); }
+    header p { margin: 0; }
+    main { width: min(100% - 28px, 760px); margin: 24px auto; }
+    section {
+      background: white;
+      margin: 18px 0;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    h2 { color: #253b80; margin: 0 0 8px; font-size: 1.35rem; }
+    section p { margin: 6px 0 14px; }
+    img, video, audio, iframe {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      margin: 12px auto 0;
+      border-radius: 10px;
+    }
+    img { height: auto; }
+    video { background: #111; }
+    iframe { aspect-ratio: 16 / 9; height: auto; border: 0; }
+    footer {
+      background: #253b80;
+      color: white;
+      padding: 18px;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 Мій мультимедійний світ</h1>
+    <p>Моя перша сторінка з відео та аудіо</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🖼️ Зображення з інтернету</h2>
+      <p>Краса природи навколо нас</p>
+      <img
+        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+        alt="Гірське озеро серед зелених гір">
+    </section>
+
+    <section>
+      <h2>🎞️ Відео з інтернету</h2>
+      <p>Подивіться коротке відео про квіти.</p>
+      <video controls preload="metadata" playsinline>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+      </video>
+    </section>
+
+    <section>
+      <h2>🎧 Аудіо з інтернету</h2>
+      <p>Послухайте звук тиранозавра!</p>
+      <audio controls preload="metadata">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо.
+      </audio>
+    </section>
+
+    <section>
+      <h2>▶️ Відео з YouTube</h2>
+      <p>Додатковий спосіб вставлення відео.</p>
+      <iframe
+        src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+        title="Відео з YouTube"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Створено на уроці інформатики | 11 клас</p>
+  </footer>
+</body>
+</html>
